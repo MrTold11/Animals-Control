@@ -1,0 +1,41 @@
+# Animals Control configuration file
+# Chance of successful breeding for each animal
+# (in percents, 100 = basic behaviour, 0 = player can't breed this animal at all)
+breeding-chance:
+  cow: 100
+  mushroom_cow: 100
+  pig: 100
+  chicken: 100
+  sheep: 100
+  wolf: 100
+  cat: 100
+  horse: 100
+  donkey: 100
+  rabbit: 100
+  villager: 100
+# Limit of animals per given area (0 = not limited)
+population-limits:
+  cow: 10
+  mushroom_cow: 10
+  pig: 10
+  chicken: 10
+  sheep: 10
+  wolf: 0
+  cat: 0
+  horse: 0
+  donkey: 5
+  rabbit: 10
+  villager: 10
+# Area (rectangle with animal at the center)
+area:
+  x: 16.0
+  y: 16.0
+  z: 256.0
+# Messages sent to the player when he can't breed an animal.
+# Leave it empty if you don't want to send anything. (Like msg: '')
+# For colors, use § instead of &
+# Use '' (double single quotes) instead of ' (single quote). E.g. msg: 'You can''t do it here!'
+messages:
+  too-many-animals: '§bToo many animals of this type around, you can''t spawn more!'
+  failed-to-breed: '§bUnfortunately, animals didn''t breed'
+

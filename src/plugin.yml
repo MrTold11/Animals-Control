@@ -1,0 +1,14 @@
+name: AnimalsControl
+main: com.mrtold.animalscontrol.AnimalsControl
+version: 1.0
+authors: [Mr_Told]
+
+commands:
+  anc:
+    description: Animals Control command
+    permission: animalscontrol.reload
+    usage: /<command> reload
+
+permissions:
+  animalscontrol.reload:
+    description: reloads ANC config
