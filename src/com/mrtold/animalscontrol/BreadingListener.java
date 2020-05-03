@@ -23,7 +23,7 @@ public class BreadingListener implements Listener {
         int a = plugin.getConfig().getInt("breeding-chance." + n.toString().toLowerCase(), -1);
         int b = plugin.getConfig().getInt("population-limits." + n.toString().toLowerCase(), -1);
         if (a > -1 && b > -1)
-            if (checkArea(event.getMother(), n) >= b)
+            if (b != 0 && checkArea(event.getMother(), n) >= b)
                 cancelBreeding(event, true);
             else if (ThreadLocalRandom.current().nextInt(0, 100) >= a)
                 cancelBreeding(event, false);
